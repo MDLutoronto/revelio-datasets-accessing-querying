@@ -1,8 +1,12 @@
 ---
 title: "Accessing and Querying the Revelio Datasets"
 layout: "home"
-description: ""
+staff:
+    - name: Kara Handren
+      link: https://library.utoronto.ca/staff/kara-handren
+description: The University of Toronto has licensed six separate datasets from Revelio Labs. These are workforce datasets that range in size from 1 to 4 TB. To facilitate easy access and querying across products, all datasets have been loaded into SciNet's supercomputing environment. Access to this environment can only be granted to current University of Toronto Faculty, Staff and Students, after an application process. This page contains additional details about this process, as well as the data itself and how to query it.
 permalink: "/"  #! Remove this if not the homepage
+created_date: 2025-05-21
 ---
 
 # Accessing and Querying the Revelio Datasets
@@ -178,7 +182,7 @@ Each dataset / directory is composed of many parquet files, up to 11000 per fold
 <img src='{{ '/assets/images/image_78.png' | relative_url }}' alt='terminal jupter lab preview' title='' width='720' height='101' />
 
     1. **Please note**: some products contain multiple folders. For example, there are three folders related to the job postings dataset: *academic\_postings\_indeed\_individual, academic\_postings\_linkedin\_individual* and *academic\_postings\_unified\_individual***.** Please see the [vendor documentation](https://here) if the contents of each folder are unclear. Otherwise, [contact us](https://mdl.library.utoronto.ca/about/contact-form) for additional support.
-        2. **Please also note:** The *academic\_* prefix does not represent that the data refers only to academic institutions or research centres. The data is comprehensive across employment fields and segments. This denotes only that the data was purchased for academic use.
+	2. **Please also note:** The *academic\_* prefix does not represent that the data refers only to academic institutions or research centres. The data is comprehensive across employment fields and segments. This denotes only that the data was purchased for academic use.
 3. If you are already familiar with the folder structure, you can also use the **os** module in python to loop through / query the files in a particular directory  
 <img src='{{ '/assets/images/Screenshot%202025-12-11%20at%2010.13.26%20AM.png' | relative_url }}' alt='preview of querying data using os' title='' width='1206' height='250' />
 4. You will need to use big data tools to work with this data. If working with python, **PyArrow** \+ **Pandas** provide excellent support for querying and analyzing parquet files. You can read more about working with [PyArrow](https://arrow.apache.org/docs/python/index.html) and [Pandas](https://pandas.pydata.org/docs/user_guide/index.html) via their oline documentation. Please note that there are other libraries and tools for working with these files. If you've like to explore other options, [this guide](https://www.datacamp.com/tutorial/apache-parquet) is an excellent place to start.
@@ -203,7 +207,7 @@ Each dataset / directory is composed of many parquet files, up to 11000 per fold
 		3. Load the arrow/21\.0\.0 module by searching for "arrow", and selecting this from the left side dropdown  
 		<img src='{{ '/assets/images/image_81.png' | relative_url }}' alt='loading pyarrow' title='' width='473' height='677' />
 		4. Open a new Python 3\.11 Notebook from the Launcher, and you should now be able to import pyarrow using the command `import pyarrow`
-		5. Note that unlike with the Terminal enviroment option, you will need to re\-load the Pyarrow module within each Jupyter Lab server session. For this reason, creating a custom environment, although more complicated, may make more sense if there are additional modules you are also planning to use in each session.
+		5. Note that unlike with the Terminal environment option, you will need to re\-load the Pyarrow module within each Jupyter Lab server session. For this reason, creating a custom environment, although more complicated, may make more sense if there are additional modules you are also planning to use in each session.
 	3. Once you have compiled and tested your script on a smaller subset of the data within the login node, you will need to submit it as a job to be run on one of SciNet's compute nodes. An application exists in OnDemand called Open Composer, which lets you submit Slurm jobs directly to Trillium and allows you to edit job parameters via a form.
 		1. Move your python script into your $SCRATCH directory
 		2. From the Open OnDemand landing page, select **Open Composer \> Python Slurm Job** and complete the required fields including script name and location. Click **Submit**
@@ -227,7 +231,7 @@ Please find below two examples of querying the data using Python, one in Termina
 2. Sample code for filtering across several different Revelio labs datasets can be found under **Running Python code in Open OnDemand** below
 3. For more help on using Pandas to subset your data:
 	* Pandas is an excellent library with many function that are tailored for working with tabular data files such as the Revelio Labs datasets. More detailed information on Pandas can be found in their [documentation](https://pandas.pydata.org/docs/user_guide/index.html).
-	* For more detailed examples of querying tabular data files in order to subset / extract a smaller selection as a CSV, please see the sample notebook files available for download at the bottom of our[Data Axle tutorial](https://mdl.library.utoronto.ca/technology/tutorials/working-data-axle-historical-business-location-data).
+	* For more detailed examples of querying tabular data files in order to subset / extract a smaller selection as a CSV, please see the sample notebook files available for download at the bottom of our [Data Axle tutorial](https://mdl.library.utoronto.ca/technology/tutorials/working-data-axle-historical-business-location-data).
 4. Instead of running code line by line, you could also choose to upload a script and run this within the environment. In order to do this **on a Windows machine**:
 	1. From the MobaXterm interface, you should see a sidebar to the left of your terminal window. Click on the orange globe icon on the far left to open the file explorer tab. This should now list all the files in your personal directory on the Trillium server
 	2. Click on the upload icon at the top (looks like an arrow pointing up)
@@ -261,4 +265,4 @@ Please find below two examples of querying the data using Python, one in Termina
 
 If you have any question, feel free to [contact us](https://mdl.library.utoronto.ca/about/contact-form).
 
-Technique: [Quantitative Data Analysis](/technique/quantitative-data-analysis)**Date Created:** 2025\-05\-21**Updated:** 2026\-01\-07
+Technique: [Quantitative Data Analysis](/technique/quantitative-data-analysis)
