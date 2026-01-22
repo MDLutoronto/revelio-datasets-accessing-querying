@@ -15,12 +15,12 @@ The University of Toronto has licensed six separate datasets from [Revelio Labs]
 
 ### **Tables of Contents:**
 
-[Understanding the Revelio Labs Datasets](#A)  
-[Working with the Revelio Labs Datasets](#B)  
-[Accessing the Environment](#C)  
-.[Accessing the Environment via Terminal](#terminal)  
-.[Accessing the Environment via Open OnDemand](#ood)  
-[Sample Python Code](#samplecode)
+[Understanding the Revelio Labs Datasets](#understanding-the-revelio-labs-datasets)  
+[Working with the Revelio Labs Datasets](#working-with-the-revelio-labs-datasets)  
+[Accessing the Environment](#accessing-the-environment)  
+.[Accessing the Environment via Terminal](#accessing-the-environment-via-terminal)  
+.[Accessing the Environment via Open OnDemand](#accessing-the-environment-via-open-ondemand)  
+[Sample Python Code](#sample-python-code)
 
 ### Understanding the Revelio Labs Datasets
 
@@ -97,7 +97,9 @@ If working in high performance computing environment is new to you, we would rec
 
 As of late 2025, there are now two distinct ways to access and query data hosted in this environment: [via terminal,](#terminal) or using a web\-based platform called [Open OnDemand](#ood). Please read through the options below, and choose the one that works best based on your experence and comfort levels with programming.
 
-### Accessing the Environment via Terminal  Here are some steps to get your started **on a Windows machine**:
+### Accessing the Environment via Terminal
+
+### Here are some steps to get your started **on a Windows machine**:
 
 1. To access the environment from a Windows machine, you will need an SSH client. We would recommend [MobaXterm](https://mobaxterm.mobatek.net/), and we will be using it in our tutorial examples
 2. Once you have installed MobaXterm, start it up
