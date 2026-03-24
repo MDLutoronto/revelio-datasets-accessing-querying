@@ -4,6 +4,15 @@ layout: "home"
 staff:
     - name: Kara Handren
       link: https://library.utoronto.ca/staff/kara-handren
+maintainer: 
+maintainer:
+  - name: Nick Field
+    link: https://library.utoronto.ca/staff/nick-field
+  - name: Neil Aitken
+    link: https://library.utoronto.ca/staff/neil-aitken
+  - name: Kara Handren
+    link: https://library.utoronto.ca/staff/kara-handren
+
 description: The University of Toronto has licensed six separate datasets from Revelio Labs. These are workforce datasets that range in size from 1 to 4 TB. To facilitate easy access and querying across products, all datasets have been loaded into SciNet's supercomputing environment. Access to this environment can only be granted to current University of Toronto Faculty, Staff and Students, after an application process. This page contains additional details about this process, as well as the data itself and how to query it.
 permalink: "/"  #! Remove this if not the homepage
 created_date: 2025-05-21
@@ -15,14 +24,20 @@ The University of Toronto has licensed six separate datasets from [Revelio Labs]
 
 ### **Tables of Contents:**
 
-[Understanding the Revelio Labs Datasets](#understanding-the-revelio-labs-datasets)  
-[Working with the Revelio Labs Datasets](#working-with-the-revelio-labs-datasets)  
-[Accessing the Environment](#accessing-the-environment)  
-.[Accessing the Environment via Terminal](#accessing-the-environment-via-terminal)  
-.[Accessing the Environment via Open OnDemand](#accessing-the-environment-via-open-ondemand)  
-[Sample Python Code](#sample-python-code)
+[Understanding the Revelio Labs Datasets](#understanding-the-revelio-labs-datasets)		
+
+[Working with the Revelio Labs Datasets](#working-with-the-revelio-labs-datasets)	
+
+[Accessing the Environment](#accessing-the-environment)		
+
+[Accessing the Environment via Terminal](#accessing-the-environment-via-terminal)	
+
+[Accessing the Environment via Open OnDemand](#accessing-the-environment-via-open-ondemand)		
+
+[Sample Python Code](#sample-python-code) 		
 
 ### Understanding the Revelio Labs Datasets
+{: #understanding-the-revelio-labs-datasets}
 
 Note: Data Dictionaries for the six products listed below can be found [here](https://www.data-dictionary.reveliolabs.com/). The University of Toronto does not license the *Transitions* Dataset.
 
@@ -54,50 +69,58 @@ This datasets contains data on the full professional history of individuals, inc
 
 This dataset contains information on companies that are covered by or referenced in the five other datasets listed above.
 
-Working with the Revelio Labs Datasets
---------------------------------------
+### Working with the Revelio Labs Datasets
+{: #working-with-the-revelio-labs-datasets}
+
 
 ### Creating an Account
 
-1. [Get a Compute Canada account](#ccaccount)
-2. [Opt into the Trillium service](#niagara)
-3. [Upload an SSH key to CCDB](#ssh)
-4. [Request Access to Revelio](#revelio)
-5. [Setting up Multifactor Authentication](#mfa)
+1. [Get a Compute Canada account](#get-a-compute-canada-account)
+2. [Opt into the Trillium service](#opt-into-the-trillium-service)
+3. [Upload an SSH key to CCDB](#upload-an-ssh-key-to-ccdb)
+4. [Request Access to Revelio](#request-access-to-revelio)
+5. [Setting up Multifactor Authentication](#setting-up-multifactor-authentication)
 
 These steps only need to be completed once to gain access, and should normally only take a few days at most to be approved.
 
-1. Get a Compute Canada account
+#### 1. Get a Compute Canada account
+{: #get-a-compute-canada-account}
 
 Please visit the [Compute Canada Database (CCDB) website](https://ccdb.computecanada.ca/account_application) and apply for an account (takes a day or two to approve).  
-   
+
 Note: Students and postdocs need to be sponsored by their supervisor, who would need to already have a Compute Canada account (or create one first). This is a simple process, requiring the student to complete a form and their supervisor to approve the sponsorship. Computing resources would be sharing under the sponsor's allocation. Please [contact the Map & Data Library](https://mdl.library.utoronto.ca/about/contact-form) for assistance, or for more information.
 
-2. Opt in to the Trillium service
+#### 2. Opt in to the Trillium service
+{: #opt-into-the-trillium-service}
 
 After the Compute Canada account is approved, you should opt in to the Trillium service on the CCDB website (or use this [direct link](https://ccdb.alliancecan.ca/me/access_systems)). The opt-in will be approved manually after one or two days, which will give you access to the Trillium supercomputer and other SciNet systems, as long as the SSH key has been uploaded to the CCDB website ([see next step](#ssh)).
 
-3. Upload an SSH key to CCDB
+#### 3. Upload an SSH key to CCDB
+{: #upload-an-ssh-key-to-ccdb}
 
 Next, locate the Manage SSH Keys option on you account page on the CCDB website (or use this [direct link](https://ccdb.computecanada.ca/ssh_authorized_keys)) and upload your public SSH key. [Instructions on creating SSH key pairs](http://docs.scinet.utoronto.ca/index.php/SSH#SSH_Keys) from the SciNet Wiki can help you with this process. This wiki also contains pages with more information on [creating SSH key pairs specifically on a Windows machine](https://docs.computecanada.ca/wiki/Generating_SSH_keys_in_Windows/en), or on [Mac or Linux machines](https://docs.computecanada.ca/wiki/Using_SSH_keys_in_Linux). The Map & Data Library also provides a [quick start tutorial for creating SSH key pairs on a Mac](https://mdl.library.utoronto.ca/technology/tutorials/generating-ssh-key-pairs-mac), if you need more help.
 
-4. Request access to Revelio
+#### 4. Request access to Revelio
+{: #request-access-to-revelio}
 
 Access to the Revelio dataset is by request only. Please [contact us](https://mdl.library.utoronto.ca/about/contact-form) to request access.
 
 **Note** there are other licensed datasets hosted on SciNet, such as the Web of Science PostgreSQL database, that require a separate approval process. Please see [this page](https://mdl.library.utoronto.ca/technology/tutorials/how-access-postgresql-databases) for more information on accessing those collections.
 
-5. Setting up Multifactor Authentication
+#### 5. Setting up Multifactor Authentication
+{: #setting-up-multifactor-authentication}
 
 Access to all SciNet services now requires multifactor authentication. If you are not prompted to do so during your initial account setup, this can be done by [logging into](https://ccdb.alliancecan.ca/) your Compute Canada account, and selecting **Account > Multifactor Authentication** from the top droptown menu. Please note thar although Duo is the recommended application for this, this is distinct from the multifactor authentication used for your utorID.
 
 ### Accessing the Environment
+{: #accessing-the-environment}
 
 If working in high performance computing environment is new to you, we would recommend you attend [SciNet workshops](https://education.scinet.utoronto.ca/) to learn more, especially their Intro to SciNet & Triullium workshop (run periodically) or watch [a recording of a previous session](https://www.youtube.com/@scinethpcattheuniversityof8962).
 
 As of late 2025, there are now two distinct ways to access and query data hosted in this environment: [via terminal,](#terminal) or using a web-based platform called [Open OnDemand](#ood). Please read through the options below, and choose the one that works best based on your experence and comfort levels with programming.
 
 ### Accessing the Environment via Terminal
+{: #accessing-the-environment-via-terminal}
 
 ### Here are some steps to get your started **on a Windows machine**:
 
@@ -105,7 +128,7 @@ As of late 2025, there are now two distinct ways to access and query data hosted
 2. Once you have installed MobaXterm, start it up
 3. From the Session menu, select New Session
 4. Select SSH from the top left
-5. For the remote host, use this format <computecanadausername>@trillium.scinet.utoronto.ca, substituting in your Compute Canada account username. For example, doej@trillium.scinet.utoronto.ca
+5. For the remote host, use this format <**computecanadausername**>@trillium.scinet.utoronto.ca, substituting in your Compute Canada account username. For example, doej@trillium.scinet.utoronto.ca
 6. Click on the Advanced SSH settings tab below
 7. For SSH-browser type, select SCP (enhanced speed)
 8. Put a checkmark next to Use private key. Click on the blue page icon to browse to the private key you setup when creating your public key for your Compute Canada account
@@ -153,6 +176,7 @@ Each dataset / directory is composed of many parquet files, up to 11000 per fold
 7. If you would prefer to use a different language to query the data, please see the relevant documentation on SciNet's website. For example, Parquet files can also be queried using C++ or Java.
 
 ### Accessing the Environment via Open OnDemand
+{: #accessing-the-environment-via-open-ondemand}
 
 Open OnDemand (OOD) is a web-based platform that allows you to interact with Trillium through a web browser instead of via a terminal. As thereis no need to install any software on your local machine, the access instructions below apply regardless of your operating system:
 
@@ -166,8 +190,10 @@ Open OnDemand (OOD) is a web-based platform that allows you to interact with Tri
 3. Select **Jupyter Lab** in order to launch a new Jupyter Server on the Trillium Cluster. You will be prompted for several parameters, including expected number of hours for this session as well as computing requirements. As these datasets are fairly small in the context of high performance computing, "number of physical cores" can be set to "1", with "4" GB of memory.
 4. Select **Launch** to begin your session. Note that it may take a minute to two to start up. Once the server is available, "Running" will appear as the status in top left, and you will be able to select the "Connect to Jupyter" button near the bottom to begin coding in Jupyter Labs  
 <img src='{{ '/assets/images/image_76.png' | relative_url }}' alt='jupyterlab server session launch' title='' width='669' height='331' />
+
 5. Once connected, you will see a list of your files to the left, and a Launcher in the centre screen. The launcher provides Jupyter Notebook or console/terminal programming environments for Python or R, as well as other options such as terminal access to the server or new text file creation near the bottom.  
 <img src='{{ '/assets/images/image_77.png' | relative_url }}' alt='jupyter lab landing page' title='' width='709' height='399' />
+
 6. If this is your first time using Jupyter Labs, please see their [excellent documentation](https://jupyter.org/try-jupyter/notebooks/?path=notebooks/Intro.ipynb) or review our own Workshop, ["An Introduction to Programming for Absolute Beginners Using Python Pt. 1"](https://mdl.library.utoronto.ca/technology/tutorials/python-information-tutorials-and-workshops) which provides an overview of coding in Jupyter Notebooks (the executable document files that also form the basis of Jupyter Labs).
 
 #### Querying the Datasets
@@ -181,11 +207,13 @@ Each dataset / directory is composed of many parquet files, up to 11000 per fold
 1. If you simply wish to browse the included files and folders, you will need to use [Linux/UNIX command line](https://LINUX COMMAND LINE) via terminal in order to navigate the environment. From your JupyterLab session, select **Terminal** under **Other** from the Launcher. Navigate to the following folder using the cd command to change the current directory: `cd /project/restricted/mdl/revelio`
 2. Type `ls` to view a list of all folders inside the directory. You can then use the `cd` command to navigate to an individual directory. For example, `cd academic_layoff`  
 <img src='{{ '/assets/images/image_78.png' | relative_url }}' alt='terminal jupter lab preview' title='' width='720' height='101' />
-
-    1. **Please note**: some products contain multiple folders. For example, there are three folders related to the job postings dataset: *academic_postings_indeed_individual, academic_postings_linkedin_individual* and *academic_postings_unified_individual***.** Please see the [vendor documentation](https://here) if the contents of each folder are unclear. Otherwise, [contact us](https://mdl.library.utoronto.ca/about/contact-form) for additional support.
+    1. **Please note**: some products contain multiple folders. For example, there are three folders related to the job postings dataset: *academic_postings_indeed_individual, academic_postings_linkedin_individual* and *academic_postings_unified_individual***.** Please see the [vendor documentation](https://here) if the contents of each folder are unclear. Otherwise, 
+	[contact us](https://mdl.library.utoronto.ca/about/contact-form) for additional support.
 	2. **Please also note:** The *academic_* prefix does not represent that the data refers only to academic institutions or research centres. The data is comprehensive across employment fields and segments. This denotes only that the data was purchased for academic use.
+
 3. If you are already familiar with the folder structure, you can also use the **os** module in python to loop through / query the files in a particular directory  
 <img src='{{ '/assets/images/Screenshot%202025-12-11%20at%2010.13.26%20AM.png' | relative_url }}' alt='preview of querying data using os' title='' width='1206' height='250' />
+
 4. You will need to use big data tools to work with this data. If working with python, **PyArrow** + **Pandas** provide excellent support for querying and analyzing parquet files. You can read more about working with [PyArrow](https://arrow.apache.org/docs/python/index.html) and [Pandas](https://pandas.pydata.org/docs/user_guide/index.html) via their oline documentation. Please note that there are other libraries and tools for working with these files. If you've like to explore other options, [this guide](https://www.datacamp.com/tutorial/apache-parquet) is an excellent place to start.
 5. ##### **Note: Queries and code run on the login node are for testing purposes only. Once you have compiled and tested your code or workflow on the Trillium login nodes, you will need to** [**submit it as a job**](https://docs.scinet.utoronto.ca/index.php/Niagara_Quickstart#Submitting_jobs) **to be run on the compute node.** **Any lengthy process being run on the login node will be automatically stopped.**
 6. We are already in a Python coding environment, and Python by default as installed by SciNet does come pre-loaded with many useful packages including Pandas. However, as PyArrow is not part of this, you will need to follow several steps in order to configure your environment to query Parquet files. This can be done either by installing and configuring a virtual environment and then porting that over to Open OnDemand or directly in Jupyter Lab itself. Please see the steps for both options below:
@@ -215,6 +243,7 @@ Each dataset / directory is composed of many parquet files, up to 11000 per fold
 		3. Please see SciNet's [guide](https://docs.scinet.utoronto.ca/index.php/Open_OnDemand_Quickstart#Open_Composer) for FAQ and more information on using Open Composer.
 
 ### Sample Python Code
+{: sample-python-code}
 
 Please find below two examples of querying the data using Python, one in Terminal and one via Jupyter Labs. Note that once you're fully online in either system, the actual coding will be the same.
 
@@ -266,4 +295,4 @@ Please find below two examples of querying the data using Python, one in Termina
 
 If you have any question, feel free to [contact us](https://mdl.library.utoronto.ca/about/contact-form).
 
-Technique: [Quantitative Data Analysis](/technique/quantitative-data-analysis)
+Technique: [Quantitative Data Analysis](https://mdl.library.utoronto.ca/technique/quantitative-data-analysis)
