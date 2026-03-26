@@ -117,7 +117,7 @@ Access to all SciNet services now requires multifactor authentication. If you ar
 
 If working in high performance computing environment is new to you, we would recommend you attend [SciNet workshops](https://education.scinet.utoronto.ca/) to learn more, especially their Intro to SciNet & Triullium workshop (run periodically) or watch [a recording of a previous session](https://www.youtube.com/@scinethpcattheuniversityof8962).
 
-As of late 2025, there are now two distinct ways to access and query data hosted in this environment: [via terminal,](#terminal) or using a web-based platform called [Open OnDemand](#ood). Please read through the options below, and choose the one that works best based on your experence and comfort levels with programming.
+As of late 2025, there are now two distinct ways to access and query data hosted in this environment: [via terminal,](#accessing-the-environment-via-terminal) or using a web-based platform called [Open OnDemand](#accessing-the-environment-via-open-ondemand). Please read through the options below, and choose the one that works best based on your experence and comfort levels with programming.
 
 ### Accessing the Environment via Terminal
 {: #accessing-the-environment-via-terminal}
@@ -276,7 +276,7 @@ Please find below two examples of querying the data using Python, one in Termina
 
 #### Running Python code in Jupyter Labs
 
-1. Once in your Jupyter Lab notebook with pyarrow installed (using either option in the*Accessing the Environment via Open OnDemand* section above), type `import pandas as pd` to import the pandas library, and `import pyarrow` to import pyarrow
+1. Once in your Jupyter Lab notebook with pyarrow installed (using either option in the *Accessing the Environment via Open OnDemand* section above), type `import pandas as pd` to import the pandas library, and `import pyarrow` to import pyarrow
 2. You can use the same code as above to examine individual files, for example `education = pd.read_parquet('individual_user_education_0009_part_00.parquet', engine='pyarrow')`
 3. You may often, however, want to merge and filter across different datasets. For example, let's say we want to merge position and education data, to view the most recent job data for people with a degree in Computer Science. To do this, we would want to look at both the **academic_individual_user_education** data, and the **academic_individual_position** data. Please [click here](https://maps.library.utoronto.ca/workshops/RevelioTutorial/Revelio_QueryExample.zip) to download a sample script with notes, as a getting started guide to similar queries. The script can be uploaded to your JupyterLab by clicking on the "upload file" button from your home directory
 
