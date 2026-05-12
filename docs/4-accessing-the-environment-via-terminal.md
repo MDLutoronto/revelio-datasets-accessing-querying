@@ -1,6 +1,17 @@
 ---
 title: "Accessing the Environment via Terminal"
 parent: "Accessing and Querying the Revelio Datasets"
+staff:
+    - name: Kara Handren
+      link: https://library.utoronto.ca/staff/kara-handren
+maintainer:
+  - name: Nick Field
+    link: https://library.utoronto.ca/staff/nick-field
+  - name: Neil Aitken
+    link: https://library.utoronto.ca/staff/neil-aitken
+  - name: Kara Handren
+    link: https://library.utoronto.ca/staff/kara-handren
+created_date: 2025-05-21
 nav_order: 4
 layout: default
 ---
@@ -25,8 +36,8 @@ layout: default
 And the same steps, **on a Mac**:
 
 1. You do not need to install any programs or clients to access the environment from a Mac. Access is via Terminal.
-2. You will use an SSH key to connect. This requires some initial configuration, but once this is done it is both more secure and more convenient. If you have not already generated a key pair, instructions on how to do so can be found [here](https://mdl.library.utoronto.ca/technology/tutorials/generating-ssh-key-pairs-mac). More detailed instructions are also available on the [SciNet wiki](https://docs.computecanada.ca/wiki/Using_SSH_keys_in_Linux). Remember, you'll need create a key-pair on any systems you intend to connect with!
-3. To login to the remote host, use this command in Terminal: `ssh -i .ssh/myprivatekeyname <computercanadausername>@trillium.scinet.utoronto.ca`. The system will prompt you to enter the passphrase for your key (Note, `-i .ssh/myprivatekeyname` is only necessary if you are not using the default key filepath and filename. See complete SSH setup instructions [here](https://mdl.library.utoronto.ca/technology/tutorials/generating-ssh-key-pairs-mac) for more information).
+2. You will use an SSH key to connect. This requires some initial configuration, but once this is done it is both more secure and more convenient. If you have not already generated a key pair, instructions on how to do so can be found [here](https://mdlutoronto.github.io/ssh-key-pairs-mac-generating/). More detailed instructions are also available on the [SciNet wiki](https://docs.computecanada.ca/wiki/Using_SSH_keys_in_Linux). Remember, you'll need create a key-pair on any systems you intend to connect with!
+3. To login to the remote host, use this command in Terminal: `ssh -i .ssh/myprivatekeyname <computercanadausername>@trillium.scinet.utoronto.ca`. The system will prompt you to enter the passphrase for your key (Note, `-i .ssh/myprivatekeyname` is only necessary if you are not using the default key filepath and filename. See complete SSH setup instructions [here](https://mdlutoronto.github.io/ssh-key-pairs-mac-generating/) for more information).
 4. You are now connected to the server
 5. To log out, type `exit` and press Enter. You are now back in your local environment.
 
@@ -59,3 +70,5 @@ Each dataset / directory is composed of many parquet files, up to 11000 per fold
 			2. `source ~/.virtualenv/[myenvironmentname]env/bin/activate`
 6. Once you have compiled and tested your script on a smaller subset of the data within the login node, you will need to [submit it as a job](https://docs.scinet.utoronto.ca/index.php/Niagara_Quickstart#Submitting_jobs) to be run on one of SciNet's compute nodes, per SciNet's instructions. These instructions also include [example submission scripts](https://docs.scinet.utoronto.ca/index.php/Slurm#Example_submission_scripts). The output will be written to your $SCRATCH directory.
 7. If you would prefer to use a different language to query the data, please see the relevant documentation on SciNet's website. For example, Parquet files can also be queried using C++ or Java.
+
+**Technique:** [Quantitative Data Analysis](https://mdlutoronto.github.io/tutorials-search/?technique=Quantitative+Data+Analysis)
