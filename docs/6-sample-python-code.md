@@ -1,6 +1,17 @@
 ---
 title: "Sample Python Code"
 parent: "Accessing and Querying the Revelio Datasets"
+staff:
+    - name: Kara Handren
+      link: https://library.utoronto.ca/staff/kara-handren
+maintainer:
+  - name: Nick Field
+    link: https://library.utoronto.ca/staff/nick-field
+  - name: Neil Aitken
+    link: https://library.utoronto.ca/staff/neil-aitken
+  - name: Kara Handren
+    link: https://library.utoronto.ca/staff/kara-handren
+created_date: 2025-05-21
 nav_order: 6
 layout: default
 ---
@@ -23,7 +34,7 @@ Please find below two examples of querying the data using Python, one in Termina
 2. Sample code for filtering across several different Revelio labs datasets can be found under **Running Python code in Open OnDemand** below
 3. For more help on using Pandas to subset your data:
 	* Pandas is an excellent library with many function that are tailored for working with tabular data files such as the Revelio Labs datasets. More detailed information on Pandas can be found in their [documentation](https://pandas.pydata.org/docs/user_guide/index.html).
-	* For more detailed examples of querying tabular data files in order to subset / extract a smaller selection as a CSV, please see the sample notebook files available for download at the bottom of our [Data Axle tutorial](https://mdl.library.utoronto.ca/technology/tutorials/working-data-axle-historical-business-location-data).
+	* For more detailed examples of querying tabular data files in order to subset / extract a smaller selection as a CSV, please see the sample notebook files available for download at the bottom of our [Data Axle tutorial](https://mdlutoronto.github.io/working-data-axle-historical-business-location/).
 4. Instead of running code line by line, you could also choose to upload a script and run this within the environment. In order to do this **on a Windows machine**:
 	1. From the MobaXterm interface, you should see a sidebar to the left of your terminal window. Click on the orange globe icon on the far left to open the file explorer tab. This should now list all the files in your personal directory on the Trillium server
 	2. Click on the upload icon at the top (looks like an arrow pointing up)
@@ -51,4 +62,6 @@ Please find below two examples of querying the data using Python, one in Termina
 	5. You can then query your results by using `merged.head()` to preview the first few rows of data  
 	<img src='{{ '/assets/images/Screenshot%202025-12-11%20at%2010.12.04%20AM.png' | relative_url }}' alt='preview of dataframe after merge' title='' width='590' height='306' />
 	
-	    1. Note if not all columns are displayed, try using `pd.set_option('display.max_columns', None)` to force python to display all columns by defaut
+	    1. Note if not all columns are displayed, try using `pd.set_option('display.max_columns', None)` to force python to display all columns by default
+
+**Technique:** [Quantitative Data Analysis](https://mdlutoronto.github.io/tutorials-search/?technique=Quantitative+Data+Analysis)

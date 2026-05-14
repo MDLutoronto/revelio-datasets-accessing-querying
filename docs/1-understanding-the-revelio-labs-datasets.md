@@ -2,6 +2,17 @@
 title: "Understanding the Revelio Labs Datasets"
 parent: "Accessing and Querying the Revelio Datasets"
 layout: default
+staff:
+    - name: Kara Handren
+      link: https://library.utoronto.ca/staff/kara-handren
+maintainer:
+  - name: Nick Field
+    link: https://library.utoronto.ca/staff/nick-field
+  - name: Neil Aitken
+    link: https://library.utoronto.ca/staff/neil-aitken
+  - name: Kara Handren
+    link: https://library.utoronto.ca/staff/kara-handren
+created_date: 2025-05-21
 nav_order: 1
 ---
 
@@ -36,3 +47,5 @@ This datasets contains data on the full professional history of individuals, inc
 ##### Company Reference Data
 
 This dataset contains information on companies that are covered by or referenced in the five other datasets listed above.
+
+**Technique:** [Quantitative Data Analysis](https://mdlutoronto.github.io/tutorials-search/?technique=Quantitative+Data+Analysis)

@@ -1,6 +1,17 @@
 ---
 title: Accessing the Environment via Open OnDemand
 parent: Accessing and Querying the Revelio Datasets
+staff:
+    - name: Kara Handren
+      link: https://library.utoronto.ca/staff/kara-handren
+maintainer:
+  - name: Nick Field
+    link: https://library.utoronto.ca/staff/nick-field
+  - name: Neil Aitken
+    link: https://library.utoronto.ca/staff/neil-aitken
+  - name: Kara Handren
+    link: https://library.utoronto.ca/staff/kara-handren
+created_date: 2025-05-21
 nav_order: 5
 layout: default
 ---
@@ -23,7 +34,7 @@ Open OnDemand (OOD) is a web-based platform that allows you to interact with Tri
 5. Once connected, you will see a list of your files to the left, and a Launcher in the centre screen. The launcher provides Jupyter Notebook or console/terminal programming environments for Python or R, as well as other options such as terminal access to the server or new text file creation near the bottom.  
 <img src='{{ '/assets/images/image_77.png' | relative_url }}' alt='jupyter lab landing page' title='' width='709' height='399' />
 
-6. If this is your first time using Jupyter Labs, please see their [excellent documentation](https://jupyter.org/try-jupyter/notebooks/?path=notebooks/Intro.ipynb) or review our own Workshop, ["An Introduction to Programming for Absolute Beginners Using Python Pt. 1"](https://mdl.library.utoronto.ca/technology/tutorials/python-information-tutorials-and-workshops) which provides an overview of coding in Jupyter Notebooks (the executable document files that also form the basis of Jupyter Labs).
+6. If this is your first time using Jupyter Labs, please see their [excellent documentation](https://jupyter.org/try-jupyter/notebooks/?path=notebooks/Intro.ipynb) or review our own Workshop, ["An Introduction to Programming for Absolute Beginners Using Python Pt. 1"](https://mdlutoronto.github.io/python-info-tutorials-workshops/) which provides an overview of coding in Jupyter Notebooks (the executable document files that also form the basis of Jupyter Labs).
 
 #### Querying the Datasets
 
@@ -70,3 +81,5 @@ Each dataset / directory is composed of many parquet files, up to 11000 per fold
 		1. Move your python script into your $SCRATCH directory
 		2. From the Open OnDemand landing page, select **Open Composer > Python Slurm Job** and complete the required fields including script name and location. Click **Submit**
 		3. Please see SciNet's [guide](https://docs.scinet.utoronto.ca/index.php/Open_OnDemand_Quickstart#Open_Composer) for FAQ and more information on using Open Composer.
+
+**Technique:** [Quantitative Data Analysis](https://mdlutoronto.github.io/tutorials-search/?technique=Quantitative+Data+Analysis)
