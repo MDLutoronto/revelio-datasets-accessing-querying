@@ -39,7 +39,7 @@ Note: Students and postdocs need to be sponsored by their supervisor, who would 
 #### 2. Opt in to the Trillium service
 {: #opt-into-the-trillium-service}
 
-After the Compute Canada account is approved, you should opt in to the Trillium service on the CCDB website (or use this [direct link](https://ccdb.alliancecan.ca/me/access_systems)). The opt-in will be approved manually after one or two days, which will give you access to the Trillium supercomputer and other SciNet systems, as long as the SSH key has been uploaded to the CCDB website ([see next step](#ssh)).
+After the Compute Canada account is approved, you should opt in to the Trillium service on the CCDB website (or use this [direct link](https://ccdb.alliancecan.ca/me/access_systems)). The opt-in will be approved manually after one or two days, which will give you access to the Trillium supercomputer and other SciNet systems, as long as the SSH key has been uploaded to the CCDB website.
 
 #### 3. Upload an SSH key to CCDB
 {: #upload-an-ssh-key-to-ccdb}
@@ -49,7 +49,7 @@ Next, locate the Manage SSH Keys option on you account page on the CCDB website 
 #### 4. Request access to Revelio
 {: #request-access-to-revelio}
 
-Access to the Revelio dataset is by request only. Please [contact us](https://mdl.library.utoronto.ca/about/contact-form) to request access.
+Access to the Revelio dataset is by request only. Please [contact us](https://mdl.library.utoronto.ca/about/contact-form) to request access, including your SciNet account name.
 
 **Note** there are other licensed datasets hosted on SciNet, such as the Web of Science PostgreSQL database, that require a separate approval process. Please see [this page](https://mdlutoronto.github.io/postgresql-databases-access/) for more information on accessing those collections.
 
@@ -63,6 +63,6 @@ Access to all SciNet services now requires multifactor authentication. If you ar
 
 If working in high performance computing environment is new to you, we would recommend you attend [SciNet workshops](https://education.scinet.utoronto.ca/) to learn more, especially their Intro to SciNet & Triullium workshop (run periodically) or watch [a recording of a previous session](https://www.youtube.com/@scinethpcattheuniversityof8962).
 
-As of late 2025, there are now two distinct ways to access and query data hosted in this environment: [via terminal,](#accessing-the-environment-via-terminal) or using a web-based platform called [Open OnDemand](#accessing-the-environment-via-open-ondemand). Please read through the options below, and choose the one that works best based on your experence and comfort levels with programming.
+As of late 2025, there are now two distinct ways to access and query data hosted in this environment: [via terminal,](https://mdlutoronto.github.io/revelio-datasets-accessing-querying/4-accessing-the-environment-via-terminal/) or using a web-based platform called [Open OnDemand](https://mdlutoronto.github.io/revelio-datasets-accessing-querying/5-accessing-the-environment-via-open/). Please read through the options below, and choose the one that works best based on your experence and comfort levels with programming.
 
 **Technique:** [Quantitative Data Analysis](https://mdlutoronto.github.io/tutorials-search/?technique=Quantitative+Data+Analysis)
