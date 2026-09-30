@@ -34,7 +34,7 @@ These steps only need to be completed once to gain access, and should normally o
 
 Please visit the [Compute Canada Database (CCDB) website](https://ccdb.computecanada.ca/account_application) and apply for an account (takes a day or two to approve).  
 
-Note: Students and postdocs need to be sponsored by their supervisor, who would need to already have a Compute Canada account (or create one first). This is a simple process, requiring the student to complete a form and their supervisor to approve the sponsorship. Computing resources would be sharing under the sponsor's allocation. Please [contact the Map & Data Library](https://mdl.library.utoronto.ca/about/contact-form) for assistance, or for more information.
+Note: Students and postdocs need to be sponsored by their supervisor, who would need to already have a Compute Canada account (or create one first). This is a simple process, requiring the student to complete a form and their supervisor to approve the sponsorship. Computing resources would be sharing under the sponsor's allocation. Please [contact the Map & Data Library](https://library.utoronto.ca/contact-us/data-maps) for assistance, or for more information.
 
 #### 2. Opt in to the Trillium service
 {: #opt-into-the-trillium-service}
@@ -49,7 +49,7 @@ Next, locate the Manage SSH Keys option on you account page on the CCDB website 
 #### 4. Request access to Revelio
 {: #request-access-to-revelio}
 
-Access to the Revelio dataset is by request only. Please [contact us](https://mdl.library.utoronto.ca/about/contact-form) to request access, including your SciNet account name.
+Access to the Revelio dataset is by request only. Please [contact us](https://library.utoronto.ca/contact-us/data-maps) to request access, including your SciNet account name.
 
 **Note** there are other licensed datasets hosted on SciNet, such as the Web of Science PostgreSQL database, that require a separate approval process. Please see [this page](https://mdlutoronto.github.io/postgresql-databases-access/) for more information on accessing those collections.
 
