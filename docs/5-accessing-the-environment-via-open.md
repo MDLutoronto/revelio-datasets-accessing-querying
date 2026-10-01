@@ -48,7 +48,7 @@ Each dataset / directory is composed of many parquet files, up to 11000 per fold
 2. Type `ls` to view a list of all folders inside the directory. You can then use the `cd` command to navigate to an individual directory. For example, `cd academic_layoff`  
 <img src='{{ '/assets/images/image_78.png' | relative_url }}' alt='terminal jupter lab preview' title='' width='720' height='101' />
     1. **Please note**: some products contain multiple folders. For example, there are three folders related to the job postings dataset: *academic_postings_indeed_individual, academic_postings_linkedin_individual* and *academic_postings_unified_individual***.** Please see the [vendor documentation](https://www.data-dictionary.reveliolabs.com/) if the contents of each folder are unclear. Otherwise, 
-	[contact us](https://mdl.library.utoronto.ca/about/contact-form) for additional support.
+	[contact us](https://library.utoronto.ca/contact-us/data-maps) for additional support.
 	2. **Please also note:** The *academic_* prefix does not represent that the data refers only to academic institutions or research centres. The data is comprehensive across employment fields and segments. This denotes only that the data was purchased for academic use.
 
 3. If you are already familiar with the folder structure, you can also use the **os** module in python to loop through / query the files in a particular directory  
